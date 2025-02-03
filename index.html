@@ -14,20 +14,21 @@
         }
         .container {
             width: 80%;
-            margin: 0 auto;
+            margin: 20px auto;
+            background: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
         }
         h1, h2, h3, h4 {
-            color: #333;
+            color: #004e92;
         }
         .header {
             text-align: center;
-            margin-top: 20px;
+            margin-bottom: 20px;
         }
         .header h1 {
             font-size: 30px;
-        }
-        .header p {
-            font-size: 18px;
         }
         .section-title {
             font-size: 22px;
@@ -41,30 +42,31 @@
         }
         .entry .title {
             font-weight: bold;
+            font-size: 18px;
         }
         .entry .details {
             margin-left: 20px;
-        }
-        .entry .details p {
-            margin: 5px 0;
-        }
-        .entry .details a {
-            color: #004e92;
-            text-decoration: none;
-        }
-        .entry .details a:hover {
-            text-decoration: underline;
         }
         .entry .date {
             font-style: italic;
             color: #666;
         }
+        .button {
+            display: inline-block;
+            background: #004e92;
+            color: white;
+            padding: 8px 15px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+        .button:hover {
+            background: #003366;
+        }
         .list {
             list-style-type: none;
             padding-left: 0;
-        }
-        .list li {
-            margin-bottom: 5px;
         }
     </style>
 </head>
@@ -72,27 +74,18 @@
     <div class="container">
         <div class="header">
             <h1>Ershadul Haque</h1>
-            <p>Curriculum Vitae</p>
             <p><strong>Address:</strong> 5 Rivet Pl, Kelso, 2795, NSW, Australia</p>
             <p><strong>Mobile:</strong> 0480377404 | <strong>Email:</strong> <a href="mailto:mhaque@csu.edu.au">mhaque@csu.edu.au</a></p>
-            <p><strong>Google Scholar:</strong> <a href="https://scholar.google.com.au/citations?user=01OZqX4AAAAJ&hl=en" target="_blank">Google Scholar Profile</a></p>
+            <a href="https://scholar.google.com.au/citations?user=01OZqX4AAAAJ&hl=en" target="_blank" class="button">Google Scholar Profile</a>
         </div>
 
         <div class="section-title">Education</div>
         <div class="entry">
             <div class="title">PhD in Computing, Mathematics, and Engineering</div>
             <div class="details">
-                <p><strong>Institution:</strong> Charles Sturt University, Bathurst, NSW, Australia</p>
-                <p><strong>Duration:</strong> Jan, 2022 - Ongoing</p>
-                <p><strong>Specialization:</strong> Quantum image computing, data processing and visualization, AI application of big data analytics including prediction</p>
-            </div>
-        </div>
-        <div class="entry">
-            <div class="title">M.Sc. in Electrical, Electronic, and Systems Engineering</div>
-            <div class="details">
-                <p><strong>Institution:</strong> National University of Malaysia, Malaysia</p>
-                <p><strong>Duration:</strong> 2012-2013 & 2014-2015</p>
-                <p><strong>Specialization:</strong> Topology construction and maintenance protocol of WSN networks</p>
+                <p><strong>Charles Sturt University, Bathurst, NSW, Australia</strong></p>
+                <p class="date">Jan 2022 - Ongoing</p>
+                <p>Specialization: Quantum image computing, data processing, AI & big data analytics</p>
             </div>
         </div>
 
@@ -100,86 +93,58 @@
         <div class="entry">
             <div class="title">Sessional Academic</div>
             <div class="details">
-                <p><strong>Institution:</strong> School of Computing, Mathematics, and Engineering, Charles Sturt University, Bathurst, NSW, Australia</p>
-                <p><strong>Duration:</strong> 05 December, 2022 - 17 Nov, 2023</p>
-            </div>
-        </div>
-        <div class="entry">
-            <div class="title">Senior Lecturer</div>
-            <div class="details">
-                <p><strong>Institution:</strong> Department of Electrical and Electronic Engineering, Feni University, Feni, Bangladesh</p>
-                <p><strong>Duration:</strong> 14 Sep, 2019 - Present</p>
-            </div>
-        </div>
-        <div class="entry">
-            <div class="title">Lecturer</div>
-            <div class="details">
-                <p><strong>Institution:</strong> Department of Electrical and Electronic Engineering, Z.H.Sikder University of Science and Technology, Shariatpur, Bangladesh</p>
-                <p><strong>Duration:</strong> 15 May, 2017 - 31 July, 2019</p>
+                <p><strong>Charles Sturt University, Australia</strong></p>
+                <p class="date">Dec 2022 - Nov 2023</p>
             </div>
         </div>
 
         <div class="section-title">Research Experience</div>
         <div class="entry">
-            <div class="title">Graduate Research Assistant</div>
+            <div class="title">Research Scholar (AGRTP Scheme)</div>
             <div class="details">
-                <p><strong>Institution:</strong> SUCOMBS Lab, The National University of Malaysia, Bangi, Malaysia</p>
-                <p><strong>Duration:</strong> 01 April 2012 - 03 June 2013 & 01 Jan 2014 - 03 June 2014</p>
-            </div>
-        </div>
-        <div class="entry">
-            <div class="title">Research Scholar under AGRTP scheme</div>
-            <div class="details">
-                <p><strong>Institution:</strong> SUCOMBS (School of Computing, Mathematics, and Engineering), Charles Sturt University, Bathurst, Australia</p>
-                <p><strong>Duration:</strong> 10 Jan, 2022 - 10 Jan, 2025</p>
+                <p><strong>Charles Sturt University, Bathurst, Australia</strong></p>
+                <p class="date">Jan 2022 - Jan 2025</p>
             </div>
         </div>
 
         <div class="section-title">Funding</div>
         <div class="entry">
-            <div class="title">Vibration and Crack Monitoring of Building Structure Using Sensor</div>
+            <div class="title">Vibration and Crack Monitoring of Building Structures</div>
             <div class="details">
-                <p><strong>Grant Number:</strong> 03-01-02-SF0736, Ministry of Higher Education, Malaysia</p>
+                <p><strong>Ministry of Higher Education, Malaysia</strong> (Grant: 03-01-02-SF0736)</p>
             </div>
         </div>
 
-        <div class="section-title">Book Chapter</div>
+        <div class="section-title">Publications</div>
         <div class="entry">
-            <div class="title">Toward Optimum Topology Protocol in Health Monitoring</div>
+            <div class="title">Book Chapter: Toward Optimum Topology Protocol in Health Monitoring</div>
             <div class="details">
-                <p><strong>Authors:</strong> Haque, M.E., Hannan, M.A.</p>
-                <p><strong>Publisher:</strong> Springer Nature Switzerland AG, EAI Springer Innovation in Communication and Computing</p>
-                <p><strong>Link:</strong> <a href="https://link.springer.com/chapter/10.1007/978-3-319-93557-7_6" target="_blank">Performability in the Internet of Things</a></p>
+                <p><strong>Published by:</strong> Springer Nature Switzerland</p>
+                <a href="https://link.springer.com/chapter/10.1007/978-3-319-93557-7_6" target="_blank" class="button">View Chapter</a>
             </div>
         </div>
 
-        <div class="section-title">Book</div>
         <div class="entry">
-            <div class="title">Optimum Topology Investigation Technique in Wireless Sensor Network</div>
+            <div class="title">Book: Optimum Topology Investigation in WSN</div>
             <div class="details">
-                <p><strong>Authors:</strong> Haque, M.E., Rahaman, M.</p>
-                <p><strong>Publisher:</strong> LAP Lambert Academic Publishing, 4 September 2014</p>
-                <p><strong>Link:</strong> <a href="https://www.amazon.com.au/Optimum-Topology-Investigation-Technique-Wireless/dp/3659596221" target="_blank">Amazon</a></p>
+                <p><strong>Published by:</strong> LAP Lambert Academic Publishing</p>
+                <a href="https://www.amazon.com.au/Optimum-Topology-Investigation-Technique-Wireless/dp/3659596221" target="_blank" class="button">View on Amazon</a>
             </div>
         </div>
 
-        <div class="section-title">Journals</div>
         <div class="entry">
-            <div class="title">Position-aware parameterized quantum autoencoder circuit using control qubit and lossy preparation approach for image compression</div>
+            <div class="title">Journal: Position-aware Quantum Autoencoder for Image Compression</div>
             <div class="details">
-                <p><strong>Authors:</strong> Haque, M.E., Paul, M.</p>
-                <p><strong>Year:</strong> 2024</p>
-                <p><strong>Link:</strong> <a href="https://doi.org/10.13140/RG.2.2.18501.05600" target="_blank">ResearchGate</a></p>
+                <p><strong>Authors:</strong> Haque, M.E., Paul, M. (2024)</p>
+                <a href="https://doi.org/10.13140/RG.2.2.18501.05600" target="_blank" class="button">View Paper</a>
             </div>
         </div>
 
-        <div class="section-title">Conference Proceedings</div>
         <div class="entry">
-            <div class="title">Quantum Image Computing using Digital Representation</div>
+            <div class="title">Conference: Quantum Image Computing using Digital Representation</div>
             <div class="details">
-                <p><strong>Authors:</strong> Haque, M.E., Paul, M.</p>
-                <p><strong>Conference:</strong> HDR 2024, School of Computing, Mathematics, and Engineering, Charles Sturt University, Bathurst, Australia</p>
-                <p><strong>Link:</strong> <a href="https://doi.org/10.13140/RG.2.2.22273.26722" target="_blank">Link to Paper</a></p>
+                <p><strong>Conference:</strong> HDR 2024, Charles Sturt University</p>
+                <a href="https://doi.org/10.13140/RG.2.2.22273.26722" target="_blank" class="button">View Conference Paper</a>
             </div>
         </div>
 
@@ -187,16 +152,16 @@
         <div class="entry">
             <div class="title">Best Research Presentation Award</div>
             <div class="details">
-                <p><strong>Awarded by:</strong> Charles Sturt University, Bathurst</p>
-                <p><strong>Date:</strong> May, 2024</p>
+                <p><strong>Awarded by:</strong> Charles Sturt University</p>
+                <p class="date">May 2024</p>
             </div>
         </div>
 
         <div class="section-title">References</div>
         <div class="entry">
             <div class="details">
-                <p><strong>Reference 1:</strong> Professor Manoranjan Paul, Charles Sturt University, Bathurst</p>
-                <p><strong>Reference 2:</strong> Dr. Maria Rashidi, Western Sydney University, Penrith</p>
+                <p><strong>Prof. Manoranjan Paul</strong>, Charles Sturt University</p>
+                <p><strong>Dr. Maria Rashidi</strong>, Western Sydney University</p>
             </div>
         </div>
     </div>
